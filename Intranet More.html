@@ -1,0 +1,89 @@
+<html>
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>XINYI JIANG Z5450259</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="java.js"></script>
+
+     <style>
+         .container spline-viewer 
+         {
+            pointer-events: none;
+         }
+    </style>    
+</head>
+<body>
+    <nav class="nav">
+       <img src="images/logo.png" alt="Logo" class="logo" onclick="toggleAccountPage()" style="cursor:pointer;">
+    <ul class="list">
+        <li>
+            <a href="Intranet.html">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="Intranet Comment.html">
+                News
+            </a>
+        </li>
+        <li>
+            <a href="Intranet More.html">
+                More
+            </a>
+        </li>
+        <li>
+            <a href="official%20website.html">
+                Back
+            </a>
+        </li>
+    </ul>
+    </nav>
+    
+    
+    <div id="accountPanel" class="account-panel">
+    <div class="avatar"></div> 
+    <button class="close" onclick="toggleAccountPage()">
+        &times;
+    </button>
+    <div class="account-header">
+        <div class="user-info">
+            <div class="name-gender">
+                <span class="name">KIM MINGYU</span>
+            </div>
+            <div class="account-id">ID: Z5450259</div>
+        </div>
+    </div>
+    <p class="account-desc">
+        This is your personal account center. View your saved activities and explore your experience history.
+    </p>
+    <img src="images/25.png" class="story-thumb" onclick="location.href='Story.html';">
+  </div>
+    
+
+    <div class="container">
+      <h2 class="modal-welcome-title">Welcome Back Kim</h2>
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.44/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/hUPwrBMmm2MuRNSO/scene.splinecode"></spline-viewer>
+    </div>
+    
+
+    <div id="accessOverlay" class="loginoverlay" role="dialog" aria-modal="true" aria-labelledby="accessTitle" aria-describedby="accessDesc">
+      <div class="loginbox" id="accessBox">
+        <div class="loginclose" onclick="closeAccessOverlay()" aria-label="CLOSE">×</div>
+        <h3 id="accessTitle" style="margin:8px 0 6px 0;">No Access Permission</h3>
+        <p id="accessDesc" style="margin:0 0 10px 0;opacity:.85;">Sorry, you do not have permission to view this page.</p>
+        <button onclick="goBack()">Return to the Home page</button>
+      </div>
+    </div>
+    
+    
+
+</body>
+
+</html>
